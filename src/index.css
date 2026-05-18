@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  font-family: ui-sans-serif, system-ui, "Hiragino Sans", "Noto Sans JP",
+    "Yu Gothic", sans-serif;
+  background: #0b1020;
+  color: #e2e8f0;
+  -webkit-font-smoothing: antialiased;
+  /* キオスク用途: 文字選択やドラッグ選択を無効化 */
+  user-select: none;
+}
+
+/* ===== フロアマップの部屋 ===== */
+.room-rect {
+  fill: #1e293b;
+  stroke: #475569;
+  stroke-width: 2;
+  transition: fill 0.3s ease, stroke 0.3s ease;
+}
+
+.room-rect.is-highlight {
+  fill: #f97316;
+  stroke: #fde68a;
+  stroke-width: 5;
+  animation: roomPulse 1.1s ease-in-out infinite;
+}
+
+.room-label {
+  fill: #cbd5e1;
+  font-size: 22px;
+  font-weight: 700;
+  pointer-events: none;
+}
+
+.room-label.is-highlight {
+  fill: #1a1205;
+}
+
+@keyframes roomPulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.45;
+  }
+}

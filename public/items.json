@@ -1,0 +1,92 @@
+[
+  {
+    "id": "item-001",
+    "name": "段ボール",
+    "reading": "だんぼーる",
+    "roomId": "room-101",
+    "floor": 1,
+    "category": "梱包資材",
+    "note": "大サイズ 20枚 / 小サイズ 35枚"
+  },
+  {
+    "id": "item-002",
+    "name": "ガムテープ",
+    "reading": "がむてーぷ",
+    "roomId": "room-102",
+    "floor": 1,
+    "category": "梱包資材",
+    "note": "茶 12巻"
+  },
+  {
+    "id": "item-003",
+    "name": "養生テープ",
+    "reading": "ようじょうてーぷ",
+    "roomId": "room-103",
+    "floor": 1,
+    "category": "梱包資材",
+    "note": "緑 8巻"
+  },
+  {
+    "id": "item-004",
+    "name": "模造紙",
+    "reading": "もぞうし",
+    "roomId": "room-202",
+    "floor": 2,
+    "category": "文具",
+    "note": "白 50枚 / 色付き 20枚"
+  },
+  {
+    "id": "item-005",
+    "name": "ペンキ",
+    "reading": "ぺんき",
+    "roomId": "room-204",
+    "floor": 2,
+    "category": "塗装",
+    "note": "白・赤・青 各2缶"
+  },
+  {
+    "id": "item-006",
+    "name": "脚立",
+    "reading": "きゃたつ",
+    "roomId": "room-301",
+    "floor": 3,
+    "category": "工具",
+    "note": "3段 4台"
+  },
+  {
+    "id": "item-007",
+    "name": "延長コード",
+    "reading": "えんちょうこーど",
+    "roomId": "room-303",
+    "floor": 3,
+    "category": "電源",
+    "note": "5m × 6本"
+  },
+  {
+    "id": "item-008",
+    "name": "台車",
+    "reading": "だいしゃ",
+    "roomId": "room-305",
+    "floor": 3,
+    "category": "運搬",
+    "note": "平台車 3台"
+  },
+  {
+    "id": "item-009",
+    "name": "パイプ椅子",
+    "reading": "ぱいぷいす",
+    "roomId": "room-401",
+    "floor": 4,
+    "category": "什器",
+    "note": "40脚"
+  },
+  {
+    "id": "item-010",
+    "name": "ブルーシート",
+    "reading": "ぶるーしーと",
+    "roomId": "room-404",
+    "floor": 4,
+    "category": "養生",
+    "note": "3.6m × 5.4m 6枚"
+  }
+]
