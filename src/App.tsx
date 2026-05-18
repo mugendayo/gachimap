@@ -20,15 +20,38 @@ export default function App() {
   const [selectedItemId, setSelectedItemId] = useState('')
   const [fitSignal, setFitSignal] = useState(0)
 
-  // 備品データの読み込み（ローカル public/items.json のみ）
+  // 備品データの読み込み（公開済み items.json）。
+  // キオスクを開きっぱなしでも最新を拾えるよう一定間隔で読み直す。
+  // 取得先はデプロイ済みファイルなので軽く、Google への常時依存もない。
   useEffect(() => {
-    fetch(`${import.meta.env.BASE_URL}items.json`)
-      .then((r) => {
+    let alive = true
+    let hasData = false
+
+    const load = async () => {
+      try {
+        const r = await fetch(
+          `${import.meta.env.BASE_URL}items.json?ts=${Date.now()}`,
+          { cache: 'no-store' }
+        )
         if (!r.ok) throw new Error(`HTTP ${r.status}`)
-        return r.json()
-      })
-      .then((data: Item[]) => setItems(data))
-      .catch(() => setLoadError(true))
+        const data: Item[] = await r.json()
+        if (!alive) return
+        setItems(data)
+        setLoadError(false)
+        hasData = true
+      } catch {
+        // 既にデータがあるなら一時的な失敗で画面を空にしない
+        if (alive && !hasData) setLoadError(true)
+      }
+    }
+
+    load()
+    const REFRESH_MS = 5 * 60 * 1000 // 5分ごとに自動再読込
+    const timer = window.setInterval(load, REFRESH_MS)
+    return () => {
+      alive = false
+      window.clearInterval(timer)
+    }
   }, [])
 
   const results = useMemo(
