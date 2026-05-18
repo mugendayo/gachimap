@@ -14,4 +14,6 @@ export interface Item {
   category: string
   /** 在庫メモ */
   note: string
+  /** 現在その備品がある部屋タブ名（カタログ取得時のみ。移動の元タブ特定に使う） */
+  tab?: string
 }
