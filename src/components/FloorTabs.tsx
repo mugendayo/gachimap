@@ -1,20 +1,20 @@
-import { FLOORS } from './floors'
+import { FLOOR_TABS } from './floors'
 
 interface Props {
   active: number
   onChange: (floor: number) => void
 }
 
-/** 1F / 2F / 3F / 4F のフロア切り替えタブ */
+/** 1F / 2F / 3F / 4F / 屋外・他 のフロア切り替えタブ */
 export default function FloorTabs({ active, onChange }: Props) {
   return (
     <div className="flex gap-2">
-      {FLOORS.map((f) => {
-        const on = f === active
+      {FLOOR_TABS.map((t) => {
+        const on = t.key === active
         return (
           <button
-            key={f}
-            onClick={() => onChange(f)}
+            key={t.key}
+            onClick={() => onChange(t.key)}
             className={[
               'rounded-xl px-6 py-3 text-2xl font-bold transition-colors',
               on
@@ -22,7 +22,7 @@ export default function FloorTabs({ active, onChange }: Props) {
                 : 'bg-slate-800 text-slate-300 hover:bg-slate-700',
             ].join(' ')}
           >
-            {f}F
+            {t.label}
           </button>
         )
       })}

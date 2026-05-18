@@ -7,7 +7,7 @@ import type { FloorProps } from './types'
 export default function Floor1({ highlightRoomId }: FloorProps) {
   return (
     <FloorCanvas
-      floor={1}
+      title="1F"
       layout={FLOOR_ROOMS[1]}
       highlightRoomId={highlightRoomId}
     />

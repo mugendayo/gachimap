@@ -24,8 +24,8 @@ function layoutRooms(layout: FloorLayout): {
   hStartX: number
   hEndX: number
 } {
-  const nv = layout.v.length
-  const nh = layout.h.length
+  const nv = Math.max(1, layout.v.length)
+  const nh = Math.max(1, layout.h.length)
   const availH = CANVAS_H - 2 * M
   const roomH = Math.min(76, (availH - (nv - 1) * GAP) / nv)
 
@@ -37,7 +37,7 @@ function layoutRooms(layout: FloorLayout): {
     h: roomH,
   }))
 
-  const cornerY = M + (nv - 1) * (roomH + GAP)
+  const cornerY = M + (layout.v.length - 1) * (roomH + GAP)
   const hStartX = M + VW + GUTTER
   const availW = CANVAS_W - hStartX - M
   const roomW = Math.min(210, (availW - (nh - 1) * GAP) / nh)
@@ -78,21 +78,22 @@ function wrapLabel(label: string, w: number): string[] {
 }
 
 /**
- * フロア共通の SVG 描画。各 FloorN は自分のレイアウトを渡すだけ。
+ * フロア共通の SVG 描画。各 FloorN は自分のレイアウトと表示名を渡すだけ。
  * 本物の図面に差し替えるときは各 FloorN.tsx の中身を実SVGに置き換える。
  * rect の id を維持すれば検索連携はそのまま動く。
  */
 export default function FloorCanvas({
-  floor,
+  title,
   layout,
   highlightRoomId,
 }: {
-  floor: number
+  title: string
   layout: FloorLayout
   highlightRoomId?: string
 }) {
   const { rooms, cornerY, roomH, hStartX, hEndX } = layoutRooms(layout)
   const corridorY = cornerY - 9
+  const wmSize = title.length <= 3 ? 220 : 96
 
   return (
     <svg
@@ -101,7 +102,7 @@ export default function FloorCanvas({
       height={CANVAS_H}
       style={{ display: 'block' }}
       role="img"
-      aria-label={`${floor}階フロアマップ`}
+      aria-label={`${title} フロアマップ`}
     >
       <rect x={0} y={0} width={CANVAS_W} height={CANVAS_H} fill="#0b1020" />
       <rect
@@ -120,11 +121,11 @@ export default function FloorCanvas({
         x={CANVAS_W - 80}
         y={170}
         fill="#1e293b"
-        fontSize={220}
+        fontSize={wmSize}
         fontWeight={800}
         textAnchor="end"
       >
-        {floor}F
+        {title}
       </text>
 
       {/* 凡例 */}
@@ -148,11 +149,12 @@ export default function FloorCanvas({
 
       {/* 部屋 */}
       {rooms.map((r) => {
-        const state = highlightRoomId === r.id
-          ? 'is-highlight'
-          : r.red
-            ? 'is-red'
-            : ''
+        const state =
+          highlightRoomId === r.id
+            ? 'is-highlight'
+            : r.red
+              ? 'is-red'
+              : ''
         const lines = wrapLabel(r.label, r.w)
         const cx = r.x + r.w / 2
         const cy = r.y + r.h / 2
@@ -188,16 +190,11 @@ export default function FloorCanvas({
         )
       })}
 
-      {/* 縦棟・横棟の見出し */}
+      {/* 棟の見出し */}
       <text x={M} y={M - 12} fill="#475569" fontSize={18} fontWeight={700}>
-        {floor}F
+        {title}
       </text>
-      <text
-        x={hStartX}
-        y={cornerY + roomH + 28}
-        fill="#475569"
-        fontSize={16}
-      >
+      <text x={hStartX} y={cornerY + roomH + 28} fill="#475569" fontSize={16}>
         ← 横の棟 →
       </text>
     </svg>

@@ -1,92 +1,2234 @@
 [
   {
-    "id": "item-001",
-    "name": "段ボール",
-    "reading": "だんぼーる",
-    "roomId": "r1-04",
+    "id": "r1-03-01",
+    "name": "ほうき",
+    "reading": "ほうき",
+    "roomId": "r1-03",
     "floor": 1,
-    "category": "梱包資材",
-    "note": "大サイズ 20枚 / 小サイズ 35枚"
+    "category": "休憩室",
+    "note": "数量 1.0"
   },
   {
-    "id": "item-002",
-    "name": "ガムテープ",
-    "reading": "がむてーぷ",
-    "roomId": "r1-13",
+    "id": "r1-03-02",
+    "name": "コタツ机",
+    "reading": "コタツ机",
+    "roomId": "r1-03",
     "floor": 1,
-    "category": "梱包資材",
-    "note": "茶 12巻"
+    "category": "休憩室",
+    "note": "数量 1.0"
   },
   {
-    "id": "item-003",
-    "name": "養生テープ",
-    "reading": "ようじょうてーぷ",
-    "roomId": "r3-17",
-    "floor": 3,
-    "category": "梱包資材",
-    "note": "緑 8巻"
+    "id": "r1-03-03",
+    "name": "長靴",
+    "reading": "長靴",
+    "roomId": "r1-03",
+    "floor": 1,
+    "category": "休憩室",
+    "note": "数量 1.0"
   },
   {
-    "id": "item-004",
-    "name": "模造紙",
-    "reading": "もぞうし",
-    "roomId": "r2-15",
+    "id": "r1-03-04",
+    "name": "滑り止めマット",
+    "reading": "滑り止めマット",
+    "roomId": "r1-03",
+    "floor": 1,
+    "category": "休憩室",
+    "note": "数量 1.0"
+  },
+  {
+    "id": "r1-07-01",
+    "name": "パイプ椅子",
+    "reading": "パイプ椅子",
+    "roomId": "r1-07",
+    "floor": 1,
+    "category": "相談室1",
+    "note": "数量 3.0"
+  },
+  {
+    "id": "r1-08-01",
+    "name": "長机",
+    "reading": "長机",
+    "roomId": "r1-08",
+    "floor": 1,
+    "category": "相談室2倉庫",
+    "note": "数量 2.0"
+  },
+  {
+    "id": "r1-08-02",
+    "name": "教室机",
+    "reading": "教室机",
+    "roomId": "r1-08",
+    "floor": 1,
+    "category": "相談室2倉庫",
+    "note": "数量 1.0"
+  },
+  {
+    "id": "r1-08-03",
+    "name": "教室椅子",
+    "reading": "教室椅子",
+    "roomId": "r1-08",
+    "floor": 1,
+    "category": "相談室2倉庫",
+    "note": "数量 1.0"
+  },
+  {
+    "id": "r1-08-04",
+    "name": "目覚まし時計",
+    "reading": "目覚まし時計",
+    "roomId": "r1-08",
+    "floor": 1,
+    "category": "相談室2倉庫",
+    "note": "数量 1.0"
+  },
+  {
+    "id": "r1-08-05",
+    "name": "丸マグネット",
+    "reading": "丸マグネット",
+    "roomId": "r1-08",
+    "floor": 1,
+    "category": "相談室2倉庫",
+    "note": "数量 8.0"
+  },
+  {
+    "id": "r1-09-01",
+    "name": "3人用マット椅子",
+    "reading": "3人用マット椅子",
+    "roomId": "r1-09",
+    "floor": 1,
+    "category": "保健室",
+    "note": "数量 1.0"
+  },
+  {
+    "id": "r1-09-02",
+    "name": "教室机",
+    "reading": "教室机",
+    "roomId": "r1-09",
+    "floor": 1,
+    "category": "保健室",
+    "note": "数量 2.0"
+  },
+  {
+    "id": "r1-09-03",
+    "name": "高さ1.8mパーテーション",
+    "reading": "高さ1.8mパーテーション",
+    "roomId": "r1-09",
+    "floor": 1,
+    "category": "保健室",
+    "note": "数量 4.0"
+  },
+  {
+    "id": "r1-09-04",
+    "name": "電気ストーブ",
+    "reading": "電気ストーブ",
+    "roomId": "r1-09",
+    "floor": 1,
+    "category": "保健室",
+    "note": "数量 1.0"
+  },
+  {
+    "id": "r1-09-05",
+    "name": "ほうき",
+    "reading": "ほうき",
+    "roomId": "r1-09",
+    "floor": 1,
+    "category": "保健室",
+    "note": "数量 4.0"
+  },
+  {
+    "id": "r1-09-06",
+    "name": "小ぼうき",
+    "reading": "小ぼうき",
+    "roomId": "r1-09",
+    "floor": 1,
+    "category": "保健室",
+    "note": "数量 2.0"
+  },
+  {
+    "id": "r1-09-07",
+    "name": "ちりとり",
+    "reading": "ちりとり",
+    "roomId": "r1-09",
+    "floor": 1,
+    "category": "保健室",
+    "note": "数量 1.0"
+  },
+  {
+    "id": "r1-09-08",
+    "name": "ヨガマット",
+    "reading": "ヨガマット",
+    "roomId": "r1-09",
+    "floor": 1,
+    "category": "保健室",
+    "note": "数量 1.0"
+  },
+  {
+    "id": "r1-09-09",
+    "name": "小物入れ引き出し",
+    "reading": "小物入れ引き出し",
+    "roomId": "r1-09",
+    "floor": 1,
+    "category": "保健室",
+    "note": "数量 4.0"
+  },
+  {
+    "id": "r1-09-10",
+    "name": "花瓶(ガラス＆陶器)",
+    "reading": "花瓶(ガラス＆陶器)",
+    "roomId": "r1-09",
+    "floor": 1,
+    "category": "保健室",
+    "note": "数量 2.0"
+  },
+  {
+    "id": "r1-16-01",
+    "name": "塚根",
+    "reading": "塚根",
+    "roomId": "r1-16",
+    "floor": 1,
+    "category": "校長室",
+    "note": ""
+  },
+  {
+    "id": "r1-17-01",
+    "name": "長机",
+    "reading": "長机",
+    "roomId": "r1-17",
+    "floor": 1,
+    "category": "会議室",
+    "note": "数量 22"
+  },
+  {
+    "id": "r1-17-02",
+    "name": "電気ストーブ",
+    "reading": "電気ストーブ",
+    "roomId": "r1-17",
+    "floor": 1,
+    "category": "会議室",
+    "note": "数量 1.0"
+  },
+  {
+    "id": "r1-17-03",
+    "name": "椅子",
+    "reading": "椅子",
+    "roomId": "r1-17",
+    "floor": 1,
+    "category": "会議室",
+    "note": "数量 22.0"
+  },
+  {
+    "id": "r1-17-04",
+    "name": "勉強椅子",
+    "reading": "勉強椅子",
+    "roomId": "r1-17",
+    "floor": 1,
+    "category": "会議室",
+    "note": "数量 2.0"
+  },
+  {
+    "id": "r1-17-05",
+    "name": "テレビ",
+    "reading": "テレビ",
+    "roomId": "r1-17",
+    "floor": 1,
+    "category": "会議室",
+    "note": "数量 1.0"
+  },
+  {
+    "id": "r1-17-06",
+    "name": "ファシリ台",
+    "reading": "ファシリ台",
+    "roomId": "r1-17",
+    "floor": 1,
+    "category": "会議室",
+    "note": "数量 1.0"
+  },
+  {
+    "id": "r1-17-07",
+    "name": "タンバリンたいこ",
+    "reading": "タンバリンたいこ",
+    "roomId": "r1-17",
+    "floor": 1,
+    "category": "会議室",
+    "note": "数量 2.0"
+  },
+  {
+    "id": "r1-17-08",
+    "name": "ギロ",
+    "reading": "ギロ",
+    "roomId": "r1-17",
+    "floor": 1,
+    "category": "会議室",
+    "note": "数量 1.0"
+  },
+  {
+    "id": "r1-17-09",
+    "name": "タンバリン",
+    "reading": "タンバリン",
+    "roomId": "r1-17",
+    "floor": 1,
+    "category": "会議室",
+    "note": "数量 1.0"
+  },
+  {
+    "id": "r1-17-10",
+    "name": "パイプ椅子",
+    "reading": "パイプ椅子",
+    "roomId": "r1-17",
+    "floor": 1,
+    "category": "会議室",
+    "note": "数量 46.0"
+  },
+  {
+    "id": "r1-17-11",
+    "name": "折りたたみ椅子",
+    "reading": "折りたたみ椅子",
+    "roomId": "r1-17",
+    "floor": 1,
+    "category": "会議室",
+    "note": "数量 11.0"
+  },
+  {
+    "id": "r1-17-12",
+    "name": "お静かに看板",
+    "reading": "お静かに看板",
+    "roomId": "r1-17",
+    "floor": 1,
+    "category": "会議室",
+    "note": "数量 1.0"
+  },
+  {
+    "id": "r1-17-13",
+    "name": "スクリーン下ろす棒",
+    "reading": "スクリーン下ろす棒",
+    "roomId": "r1-17",
+    "floor": 1,
+    "category": "会議室",
+    "note": "数量 1.0"
+  },
+  {
+    "id": "r1-17-14",
+    "name": "バチ",
+    "reading": "バチ",
+    "roomId": "r1-17",
+    "floor": 1,
+    "category": "会議室",
+    "note": "数量 いっぱい"
+  },
+  {
+    "id": "r1-17-15",
+    "name": "ホワイトボードクリーナー",
+    "reading": "ホワイトボードクリーナー",
+    "roomId": "r1-17",
+    "floor": 1,
+    "category": "会議室",
+    "note": "数量 1.0"
+  },
+  {
+    "id": "r1-17-16",
+    "name": "ホワイトボードマーカー",
+    "reading": "ホワイトボードマーカー",
+    "roomId": "r1-17",
+    "floor": 1,
+    "category": "会議室",
+    "note": "数量 11"
+  },
+  {
+    "id": "r1-17-17",
+    "name": "6口延長",
+    "reading": "6口延長",
+    "roomId": "r1-17",
+    "floor": 1,
+    "category": "会議室",
+    "note": "数量 1.0"
+  },
+  {
+    "id": "r1-17-18",
+    "name": "3口延長",
+    "reading": "3口延長",
+    "roomId": "r1-17",
+    "floor": 1,
+    "category": "会議室",
+    "note": "数量 1.0"
+  },
+  {
+    "id": "r2-03-01",
+    "name": "丸椅子",
+    "reading": "丸椅子",
+    "roomId": "r2-03",
     "floor": 2,
-    "category": "文具",
-    "note": "白 50枚 / 色付き 20枚"
+    "category": "被服室",
+    "note": "数量 41.0"
   },
   {
-    "id": "item-005",
-    "name": "ペンキ",
-    "reading": "ぺんき",
-    "roomId": "r3-17",
-    "floor": 3,
-    "category": "塗装",
-    "note": "白・赤・青 各2缶"
+    "id": "r2-03-02",
+    "name": "パイプ椅子",
+    "reading": "パイプ椅子",
+    "roomId": "r2-03",
+    "floor": 2,
+    "category": "被服室",
+    "note": "数量 1.0"
   },
   {
-    "id": "item-006",
-    "name": "脚立",
-    "reading": "きゃたつ",
-    "roomId": "r1-02",
-    "floor": 1,
-    "category": "工具",
-    "note": "3段 4台"
+    "id": "r2-03-03",
+    "name": "アイロン",
+    "reading": "アイロン",
+    "roomId": "r2-03",
+    "floor": 2,
+    "category": "被服室",
+    "note": "数量 1.0"
   },
   {
-    "id": "item-007",
-    "name": "延長コード",
-    "reading": "えんちょうこーど",
-    "roomId": "r1-15",
-    "floor": 1,
-    "category": "電源",
-    "note": "5m × 6本"
+    "id": "r2-03-04",
+    "name": "アイロンマット",
+    "reading": "アイロンマット",
+    "roomId": "r2-03",
+    "floor": 2,
+    "category": "被服室",
+    "note": "数量 1.0"
   },
   {
-    "id": "item-008",
-    "name": "台車",
-    "reading": "だいしゃ",
+    "id": "r2-03-05",
+    "name": "横長3段棚",
+    "reading": "横長3段棚",
+    "roomId": "r2-03",
+    "floor": 2,
+    "category": "被服室",
+    "note": "数量 2.0"
+  },
+  {
+    "id": "r2-03-06",
+    "name": "6段本棚",
+    "reading": "6段本棚",
+    "roomId": "r2-03",
+    "floor": 2,
+    "category": "被服室",
+    "note": "数量 1.0"
+  },
+  {
+    "id": "r2-03-07",
+    "name": "黒板消し",
+    "reading": "黒板消し",
+    "roomId": "r2-03",
+    "floor": 2,
+    "category": "被服室",
+    "note": "数量 1.0"
+  },
+  {
+    "id": "r2-03-08",
+    "name": "黒板消しクリーナー",
+    "reading": "黒板消しクリーナー",
+    "roomId": "r2-03",
+    "floor": 2,
+    "category": "被服室",
+    "note": "数量 1.0"
+  },
+  {
+    "id": "r2-03-09",
+    "name": "バケツ",
+    "reading": "バケツ",
+    "roomId": "r2-03",
+    "floor": 2,
+    "category": "被服室",
+    "note": "数量 3.0"
+  },
+  {
+    "id": "r2-03-10",
+    "name": "ほうき",
+    "reading": "ほうき",
+    "roomId": "r2-03",
+    "floor": 2,
+    "category": "被服室",
+    "note": "数量 1.0"
+  },
+  {
+    "id": "r2-03-11",
+    "name": "小ほうき",
+    "reading": "小ほうき",
+    "roomId": "r2-03",
+    "floor": 2,
+    "category": "被服室",
+    "note": "数量 1.0"
+  },
+  {
+    "id": "r2-07-01",
+    "name": "教室机",
+    "reading": "教室机",
+    "roomId": "r2-07",
+    "floor": 2,
+    "category": "教室6年",
+    "note": "数量 11.0"
+  },
+  {
+    "id": "r2-07-02",
+    "name": "パイプ椅子",
+    "reading": "パイプ椅子",
+    "roomId": "r2-07",
+    "floor": 2,
+    "category": "教室6年",
+    "note": "数量 16.0"
+  },
+  {
+    "id": "r2-07-03",
+    "name": "勉強椅子",
+    "reading": "勉強椅子",
+    "roomId": "r2-07",
+    "floor": 2,
+    "category": "教室6年",
+    "note": "数量 5.0"
+  },
+  {
+    "id": "r2-07-04",
+    "name": "黒板消し",
+    "reading": "黒板消し",
+    "roomId": "r2-07",
+    "floor": 2,
+    "category": "教室6年",
+    "note": "数量 2.0"
+  },
+  {
+    "id": "r2-07-05",
+    "name": "黒板消しクリーナー",
+    "reading": "黒板消しクリーナー",
+    "roomId": "r2-07",
+    "floor": 2,
+    "category": "教室6年",
+    "note": "数量 1.0"
+  },
+  {
+    "id": "r2-07-06",
+    "name": "鉛筆削り",
+    "reading": "鉛筆削り",
+    "roomId": "r2-07",
+    "floor": 2,
+    "category": "教室6年",
+    "note": "数量 2.0"
+  },
+  {
+    "id": "r2-07-07",
+    "name": "テレビ",
+    "reading": "テレビ",
+    "roomId": "r2-07",
+    "floor": 2,
+    "category": "教室6年",
+    "note": "数量 1.0"
+  },
+  {
+    "id": "r2-07-08",
+    "name": "ゴミ箱",
+    "reading": "ゴミ箱",
+    "roomId": "r2-07",
+    "floor": 2,
+    "category": "教室6年",
+    "note": "数量 1.0"
+  },
+  {
+    "id": "r2-07-09",
+    "name": "扇風機",
+    "reading": "扇風機",
+    "roomId": "r2-07",
+    "floor": 2,
+    "category": "教室6年",
+    "note": "数量 1.0"
+  },
+  {
+    "id": "r2-07-10",
+    "name": "国語辞典",
+    "reading": "国語辞典",
+    "roomId": "r2-07",
+    "floor": 2,
+    "category": "教室6年",
+    "note": "数量 7.0"
+  },
+  {
+    "id": "r2-07-11",
+    "name": "漢字辞典",
+    "reading": "漢字辞典",
+    "roomId": "r2-07",
+    "floor": 2,
+    "category": "教室6年",
+    "note": "数量 7.0"
+  },
+  {
+    "id": "r2-10-01",
+    "name": "長机",
+    "reading": "長机",
+    "roomId": "r2-10",
+    "floor": 2,
+    "category": "男子更衣室",
+    "note": "数量 3.0"
+  },
+  {
+    "id": "r2-10-02",
+    "name": "黒板消し",
+    "reading": "黒板消し",
+    "roomId": "r2-10",
+    "floor": 2,
+    "category": "男子更衣室",
+    "note": "数量 1.0"
+  },
+  {
+    "id": "r2-10-03",
+    "name": "パイプ椅子",
+    "reading": "パイプ椅子",
+    "roomId": "r2-10",
+    "floor": 2,
+    "category": "男子更衣室",
+    "note": "数量 2.0"
+  },
+  {
+    "id": "r2-10-04",
+    "name": "勉強机",
+    "reading": "勉強机",
+    "roomId": "r2-10",
+    "floor": 2,
+    "category": "男子更衣室",
+    "note": "数量 1.0"
+  },
+  {
+    "id": "r2-10-05",
+    "name": "勉強椅子",
+    "reading": "勉強椅子",
+    "roomId": "r2-10",
+    "floor": 2,
+    "category": "男子更衣室",
+    "note": "数量 1.0"
+  },
+  {
+    "id": "r2-10-06",
+    "name": "ほうき",
+    "reading": "ほうき",
+    "roomId": "r2-10",
+    "floor": 2,
+    "category": "男子更衣室",
+    "note": "数量 4.0"
+  },
+  {
+    "id": "r2-10-07",
+    "name": "ちりとり",
+    "reading": "ちりとり",
+    "roomId": "r2-10",
+    "floor": 2,
+    "category": "男子更衣室",
+    "note": "数量 1.0"
+  },
+  {
+    "id": "r2-10-08",
+    "name": "ゴミ用トング",
+    "reading": "ゴミ用トング",
+    "roomId": "r2-10",
+    "floor": 2,
+    "category": "男子更衣室",
+    "note": "数量 1.0"
+  },
+  {
+    "id": "r2-10-09",
+    "name": "小ほうき",
+    "reading": "小ほうき",
+    "roomId": "r2-10",
+    "floor": 2,
+    "category": "男子更衣室",
+    "note": "数量 1.0"
+  },
+  {
+    "id": "r2-12-01",
+    "name": "バケツ",
+    "reading": "バケツ",
     "roomId": "r2-12",
     "floor": 2,
-    "category": "運搬",
-    "note": "平台車 3台"
+    "category": "調理室",
+    "note": "数量 4.0"
   },
   {
-    "id": "item-009",
+    "id": "r2-12-02",
+    "name": "電気ストーブ",
+    "reading": "電気ストーブ",
+    "roomId": "r2-12",
+    "floor": 2,
+    "category": "調理室",
+    "note": "数量 3.0"
+  },
+  {
+    "id": "r2-12-03",
+    "name": "丸いす",
+    "reading": "丸いす",
+    "roomId": "r2-12",
+    "floor": 2,
+    "category": "調理室",
+    "note": "数量 40.0"
+  },
+  {
+    "id": "r2-12-04",
+    "name": "勉強机",
+    "reading": "勉強机",
+    "roomId": "r2-12",
+    "floor": 2,
+    "category": "調理室",
+    "note": "数量 1.0"
+  },
+  {
+    "id": "r2-12-05",
+    "name": "食事運び台",
+    "reading": "食事運び台",
+    "roomId": "r2-12",
+    "floor": 2,
+    "category": "調理室",
+    "note": "数量 1.0"
+  },
+  {
+    "id": "r2-12-06",
+    "name": "ゴミ箱",
+    "reading": "ゴミ箱",
+    "roomId": "r2-12",
+    "floor": 2,
+    "category": "調理室",
+    "note": "数量 1.0"
+  },
+  {
+    "id": "r2-12-07",
+    "name": "ほうき",
+    "reading": "ほうき",
+    "roomId": "r2-12",
+    "floor": 2,
+    "category": "調理室",
+    "note": "数量 2.0"
+  },
+  {
+    "id": "r2-12-08",
+    "name": "ちりとり",
+    "reading": "ちりとり",
+    "roomId": "r2-12",
+    "floor": 2,
+    "category": "調理室",
+    "note": "数量 2.0"
+  },
+  {
+    "id": "r2-12-09",
+    "name": "掃除機",
+    "reading": "掃除機",
+    "roomId": "r2-12",
+    "floor": 2,
+    "category": "調理室",
+    "note": "数量 1.0"
+  },
+  {
+    "id": "r2-12-10",
+    "name": "白いデカ机",
+    "reading": "白いデカ机",
+    "roomId": "r2-12",
+    "floor": 2,
+    "category": "調理室",
+    "note": "数量 2.0"
+  },
+  {
+    "id": "r2-12-11",
+    "name": "3段のデカ棚",
+    "reading": "3段のデカ棚",
+    "roomId": "r2-12",
+    "floor": 2,
+    "category": "調理室",
+    "note": ""
+  },
+  {
+    "id": "r2-12-12",
+    "name": "脚立",
+    "reading": "脚立",
+    "roomId": "r2-12",
+    "floor": 2,
+    "category": "調理室",
+    "note": "数量 1.0"
+  },
+  {
+    "id": "r2-12-13",
+    "name": "食器運びトレイ",
+    "reading": "食器運びトレイ",
+    "roomId": "r2-12",
+    "floor": 2,
+    "category": "調理室",
+    "note": "数量 4.0"
+  },
+  {
+    "id": "r2-12-14",
+    "name": "黒板消し",
+    "reading": "黒板消し",
+    "roomId": "r2-12",
+    "floor": 2,
+    "category": "調理室",
+    "note": "数量 2.0"
+  },
+  {
+    "id": "r2-12-15",
+    "name": "消化器",
+    "reading": "消化器",
+    "roomId": "r2-12",
+    "floor": 2,
+    "category": "調理室",
+    "note": "数量 1.0"
+  },
+  {
+    "id": "r2-12-16",
+    "name": "調理器具・皿",
+    "reading": "調理器具・皿",
+    "roomId": "r2-12",
+    "floor": 2,
+    "category": "調理室",
+    "note": "数量 大量"
+  },
+  {
+    "id": "r2-14-01",
+    "name": "買い物かご",
+    "reading": "買い物かご",
+    "roomId": "r2-14",
+    "floor": 2,
+    "category": "生徒会室",
+    "note": "数量 1.0"
+  },
+  {
+    "id": "r2-14-02",
+    "name": "アクリルパーテーション",
+    "reading": "アクリルパーテーション",
+    "roomId": "r2-14",
+    "floor": 2,
+    "category": "生徒会室",
+    "note": "数量 1.0"
+  },
+  {
+    "id": "r2-14-03",
+    "name": "電子ピアノ",
+    "reading": "電子ピアノ",
+    "roomId": "r2-14",
+    "floor": 2,
+    "category": "生徒会室",
+    "note": "数量 1.0"
+  },
+  {
+    "id": "r2-14-04",
+    "name": "長机",
+    "reading": "長机",
+    "roomId": "r2-14",
+    "floor": 2,
+    "category": "生徒会室",
+    "note": "数量 1.0"
+  },
+  {
+    "id": "r2-14-05",
+    "name": "1人用ソファ",
+    "reading": "1人用ソファ",
+    "roomId": "r2-14",
+    "floor": 2,
+    "category": "生徒会室",
+    "note": "数量 2.0"
+  },
+  {
+    "id": "r2-14-06",
+    "name": "丸椅子",
+    "reading": "丸椅子",
+    "roomId": "r2-14",
+    "floor": 2,
+    "category": "生徒会室",
+    "note": "数量 2.0"
+  },
+  {
+    "id": "r2-14-07",
+    "name": "椅子",
+    "reading": "椅子",
+    "roomId": "r2-14",
+    "floor": 2,
+    "category": "生徒会室",
+    "note": "数量 1.0"
+  },
+  {
+    "id": "r2-14-08",
+    "name": "2穴開けパンチ",
+    "reading": "2穴開けパンチ",
+    "roomId": "r2-14",
+    "floor": 2,
+    "category": "生徒会室",
+    "note": "数量 1.0"
+  },
+  {
+    "id": "r2-14-09",
+    "name": "ゴミ箱",
+    "reading": "ゴミ箱",
+    "roomId": "r2-14",
+    "floor": 2,
+    "category": "生徒会室",
+    "note": "数量 1.0"
+  },
+  {
+    "id": "r2-14-10",
     "name": "パイプ椅子",
-    "reading": "ぱいぷいす",
-    "roomId": "r1-10",
-    "floor": 1,
-    "category": "什器",
-    "note": "40脚"
+    "reading": "パイプ椅子",
+    "roomId": "r2-14",
+    "floor": 2,
+    "category": "生徒会室",
+    "note": "数量 11.0"
   },
   {
-    "id": "item-010",
+    "id": "r2-15-01",
+    "name": "折りたたみついたて",
+    "reading": "折りたたみついたて",
+    "roomId": "r2-15",
+    "floor": 2,
+    "category": "図書室",
+    "note": "数量 1.0"
+  },
+  {
+    "id": "r2-15-02",
+    "name": "電気ストーブ",
+    "reading": "電気ストーブ",
+    "roomId": "r2-15",
+    "floor": 2,
+    "category": "図書室",
+    "note": "数量 1.0"
+  },
+  {
+    "id": "r2-15-03",
+    "name": "スリッパ",
+    "reading": "スリッパ",
+    "roomId": "r2-15",
+    "floor": 2,
+    "category": "図書室",
+    "note": "数量 5.0"
+  },
+  {
+    "id": "r2-15-04",
+    "name": "アルコール除菌スプレー【手】",
+    "reading": "アルコール除菌スプレー【手】",
+    "roomId": "r2-15",
+    "floor": 2,
+    "category": "図書室",
+    "note": "数量 1.0"
+  },
+  {
+    "id": "r2-15-05",
+    "name": "セロハンテープ",
+    "reading": "セロハンテープ",
+    "roomId": "r2-15",
+    "floor": 2,
+    "category": "図書室",
+    "note": "数量 1.0"
+  },
+  {
+    "id": "r2-15-06",
+    "name": "椅子",
+    "reading": "椅子",
+    "roomId": "r2-15",
+    "floor": 2,
+    "category": "図書室",
+    "note": "数量 23.0"
+  },
+  {
+    "id": "r2-15-07",
+    "name": "丸椅子",
+    "reading": "丸椅子",
+    "roomId": "r2-15",
+    "floor": 2,
+    "category": "図書室",
+    "note": "数量 1.0"
+  },
+  {
+    "id": "r2-15-08",
+    "name": "本棚",
+    "reading": "本棚",
+    "roomId": "r2-15",
+    "floor": 2,
+    "category": "図書室",
+    "note": "数量 無限"
+  },
+  {
+    "id": "r2-16-01",
+    "name": "勉強机",
+    "reading": "勉強机",
+    "roomId": "r2-16",
+    "floor": 2,
+    "category": "女子更衣室",
+    "note": "数量 25.0"
+  },
+  {
+    "id": "r3-04-01",
+    "name": "テレビ",
+    "reading": "テレビ",
+    "roomId": "r3-04",
+    "floor": 3,
+    "category": "理科室",
+    "note": "数量 1.0"
+  },
+  {
+    "id": "r3-04-02",
+    "name": "黒板消し",
+    "reading": "黒板消し",
+    "roomId": "r3-04",
+    "floor": 3,
+    "category": "理科室",
+    "note": "数量 2.0"
+  },
+  {
+    "id": "r3-04-03",
+    "name": "緑チョーク",
+    "reading": "緑チョーク",
+    "roomId": "r3-04",
+    "floor": 3,
+    "category": "理科室",
+    "note": "数量 1.0"
+  },
+  {
+    "id": "r3-04-04",
+    "name": "理科室用椅子",
+    "reading": "理科室用椅子",
+    "roomId": "r3-04",
+    "floor": 3,
+    "category": "理科室",
+    "note": "数量 31.0"
+  },
+  {
+    "id": "r3-04-05",
+    "name": "ホワイトボードクリーナー",
+    "reading": "ホワイトボードクリーナー",
+    "roomId": "r3-04",
+    "floor": 3,
+    "category": "理科室",
+    "note": "数量 1.0"
+  },
+  {
+    "id": "r3-04-06",
+    "name": "緑のホワイトボードマーカー",
+    "reading": "緑のホワイトボードマーカー",
+    "roomId": "r3-04",
+    "floor": 3,
+    "category": "理科室",
+    "note": "数量 1.0"
+  },
+  {
+    "id": "r3-04-07",
+    "name": "啓林館理科教科書",
+    "reading": "啓林館理科教科書",
+    "roomId": "r3-04",
+    "floor": 3,
+    "category": "理科室",
+    "note": "数量 1×12"
+  },
+  {
+    "id": "r3-04-08",
+    "name": "ビーカー",
+    "reading": "ビーカー",
+    "roomId": "r3-04",
+    "floor": 3,
+    "category": "理科室",
+    "note": "数量 1.0"
+  },
+  {
+    "id": "r3-04-09",
+    "name": "試験管",
+    "reading": "試験管",
+    "roomId": "r3-04",
+    "floor": 3,
+    "category": "理科室",
+    "note": "数量 1.0"
+  },
+  {
+    "id": "r3-04-10",
+    "name": "ほうき",
+    "reading": "ほうき",
+    "roomId": "r3-04",
+    "floor": 3,
+    "category": "理科室",
+    "note": "数量 5.0"
+  },
+  {
+    "id": "r3-08-01",
+    "name": "黒板消し",
+    "reading": "黒板消し",
+    "roomId": "r3-08",
+    "floor": 3,
+    "category": "理科室左1年A組",
+    "note": "数量 3.0"
+  },
+  {
+    "id": "r3-08-02",
+    "name": "白チョーク",
+    "reading": "白チョーク",
+    "roomId": "r3-08",
+    "floor": 3,
+    "category": "理科室左1年A組",
+    "note": "数量 4.0"
+  },
+  {
+    "id": "r3-08-03",
+    "name": "赤チョーク",
+    "reading": "赤チョーク",
+    "roomId": "r3-08",
+    "floor": 3,
+    "category": "理科室左1年A組",
+    "note": "数量 1.0"
+  },
+  {
+    "id": "r3-08-04",
+    "name": "テレビ",
+    "reading": "テレビ",
+    "roomId": "r3-08",
+    "floor": 3,
+    "category": "理科室左1年A組",
+    "note": "数量 1.0"
+  },
+  {
+    "id": "r3-08-05",
+    "name": "ゴミ箱",
+    "reading": "ゴミ箱",
+    "roomId": "r3-08",
+    "floor": 3,
+    "category": "理科室左1年A組",
+    "note": "数量 1.0"
+  },
+  {
+    "id": "r3-08-06",
+    "name": "椅子",
+    "reading": "椅子",
+    "roomId": "r3-08",
+    "floor": 3,
+    "category": "理科室左1年A組",
+    "note": "数量 6.0"
+  },
+  {
+    "id": "r3-08-07",
+    "name": "長机",
+    "reading": "長机",
+    "roomId": "r3-08",
+    "floor": 3,
+    "category": "理科室左1年A組",
+    "note": "数量 2.0"
+  },
+  {
+    "id": "r3-08-08",
     "name": "ブルーシート",
-    "reading": "ぶるーしーと",
+    "reading": "ブルーシート",
+    "roomId": "r3-08",
+    "floor": 3,
+    "category": "理科室左1年A組",
+    "note": "数量 1.0"
+  },
+  {
+    "id": "r3-08-09",
+    "name": "掃除用具",
+    "reading": "掃除用具",
+    "roomId": "r3-08",
+    "floor": 3,
+    "category": "理科室左1年A組",
+    "note": "数量 1式"
+  },
+  {
+    "id": "r3-11-01",
+    "name": "教室机",
+    "reading": "教室机",
+    "roomId": "r3-11",
+    "floor": 3,
+    "category": "階段横仲良し教室",
+    "note": "数量 1.0"
+  },
+  {
+    "id": "r3-11-02",
+    "name": "教室椅子",
+    "reading": "教室椅子",
+    "roomId": "r3-11",
+    "floor": 3,
+    "category": "階段横仲良し教室",
+    "note": "数量 2.0"
+  },
+  {
+    "id": "r3-11-03",
+    "name": "黒板消し",
+    "reading": "黒板消し",
+    "roomId": "r3-11",
+    "floor": 3,
+    "category": "階段横仲良し教室",
+    "note": "数量 1.0"
+  },
+  {
+    "id": "r3-11-04",
+    "name": "ぞうきん",
+    "reading": "ぞうきん",
+    "roomId": "r3-11",
+    "floor": 3,
+    "category": "階段横仲良し教室",
+    "note": "数量 2.0"
+  },
+  {
+    "id": "r3-11-05",
+    "name": "長机",
+    "reading": "長机",
+    "roomId": "r3-11",
+    "floor": 3,
+    "category": "階段横仲良し教室",
+    "note": "数量 2.0"
+  },
+  {
+    "id": "r3-11-06",
+    "name": "正方形マット",
+    "reading": "正方形マット",
+    "roomId": "r3-11",
+    "floor": 3,
+    "category": "階段横仲良し教室",
+    "note": "数量 100.0"
+  },
+  {
+    "id": "r3-11-07",
+    "name": "フラフープ",
+    "reading": "フラフープ",
+    "roomId": "r3-11",
+    "floor": 3,
+    "category": "階段横仲良し教室",
+    "note": "数量 3.0"
+  },
+  {
+    "id": "r3-12-01",
+    "name": "パイプ椅子",
+    "reading": "パイプ椅子",
+    "roomId": "r3-12",
+    "floor": 3,
+    "category": "視聴覚室横仲良し教室",
+    "note": "数量 25.0"
+  },
+  {
+    "id": "r3-12-02",
+    "name": "丸椅子",
+    "reading": "丸椅子",
+    "roomId": "r3-12",
+    "floor": 3,
+    "category": "視聴覚室横仲良し教室",
+    "note": "数量 1.0"
+  },
+  {
+    "id": "r3-12-03",
+    "name": "黒板消しクリーナー",
+    "reading": "黒板消しクリーナー",
+    "roomId": "r3-12",
+    "floor": 3,
+    "category": "視聴覚室横仲良し教室",
+    "note": "数量 1.0"
+  },
+  {
+    "id": "r3-12-04",
+    "name": "黒板消し",
+    "reading": "黒板消し",
+    "roomId": "r3-12",
+    "floor": 3,
+    "category": "視聴覚室横仲良し教室",
+    "note": "数量 2.0"
+  },
+  {
+    "id": "r3-12-05",
+    "name": "電子ピアノ",
+    "reading": "電子ピアノ",
+    "roomId": "r3-12",
+    "floor": 3,
+    "category": "視聴覚室横仲良し教室",
+    "note": "数量 1.0"
+  },
+  {
+    "id": "r3-12-06",
+    "name": "NECのパソコンディスプレイ",
+    "reading": "NECのパソコンディスプレイ",
+    "roomId": "r3-12",
+    "floor": 3,
+    "category": "視聴覚室横仲良し教室",
+    "note": "数量 3.0"
+  },
+  {
+    "id": "r3-12-07",
+    "name": "昔のテレビ",
+    "reading": "昔のテレビ",
+    "roomId": "r3-12",
+    "floor": 3,
+    "category": "視聴覚室横仲良し教室",
+    "note": "数量 1.0"
+  },
+  {
+    "id": "r3-12-08",
+    "name": "水入れるトレーニング器具",
+    "reading": "水入れるトレーニング器具",
+    "roomId": "r3-12",
+    "floor": 3,
+    "category": "視聴覚室横仲良し教室",
+    "note": "数量 2.0"
+  },
+  {
+    "id": "r3-12-09",
+    "name": "黒いテレビ台",
+    "reading": "黒いテレビ台",
+    "roomId": "r3-12",
+    "floor": 3,
+    "category": "視聴覚室横仲良し教室",
+    "note": "数量 1.0"
+  },
+  {
+    "id": "r3-12-10",
+    "name": "白いヤマハ机",
+    "reading": "白いヤマハ机",
+    "roomId": "r3-12",
+    "floor": 3,
+    "category": "視聴覚室横仲良し教室",
+    "note": "数量 1.0"
+  },
+  {
+    "id": "r3-12-11",
+    "name": "教室机",
+    "reading": "教室机",
+    "roomId": "r3-12",
+    "floor": 3,
+    "category": "視聴覚室横仲良し教室",
+    "note": "数量 1.0"
+  },
+  {
+    "id": "r3-12-12",
+    "name": "教室椅子",
+    "reading": "教室椅子",
+    "roomId": "r3-12",
+    "floor": 3,
+    "category": "視聴覚室横仲良し教室",
+    "note": "数量 2.0"
+  },
+  {
+    "id": "r3-12-13",
+    "name": "ほうき",
+    "reading": "ほうき",
+    "roomId": "r3-12",
+    "floor": 3,
+    "category": "視聴覚室横仲良し教室",
+    "note": "数量 1.0"
+  },
+  {
+    "id": "r3-12-14",
+    "name": "小バランスボール",
+    "reading": "小バランスボール",
+    "roomId": "r3-12",
+    "floor": 3,
+    "category": "視聴覚室横仲良し教室",
+    "note": "数量 2.0"
+  },
+  {
+    "id": "r3-13-01",
+    "name": "長机",
+    "reading": "長机",
+    "roomId": "r3-13",
+    "floor": 3,
+    "category": "視聴覚室",
+    "note": "数量 15.0"
+  },
+  {
+    "id": "r3-13-02",
+    "name": "司会机",
+    "reading": "司会机",
+    "roomId": "r3-13",
+    "floor": 3,
+    "category": "視聴覚室",
+    "note": "数量 1.0"
+  },
+  {
+    "id": "r3-13-03",
+    "name": "黒板消し",
+    "reading": "黒板消し",
+    "roomId": "r3-13",
+    "floor": 3,
+    "category": "視聴覚室",
+    "note": "数量 1.0"
+  },
+  {
+    "id": "r3-13-04",
+    "name": "スクリーン下ろす棒",
+    "reading": "スクリーン下ろす棒",
+    "roomId": "r3-13",
+    "floor": 3,
+    "category": "視聴覚室",
+    "note": "数量 1.0"
+  },
+  {
+    "id": "r3-13-05",
+    "name": "パイプ椅子",
+    "reading": "パイプ椅子",
+    "roomId": "r3-13",
+    "floor": 3,
+    "category": "視聴覚室",
+    "note": "数量 88.0"
+  },
+  {
+    "id": "r3-13-06",
+    "name": "ストーブ",
+    "reading": "ストーブ",
+    "roomId": "r3-13",
+    "floor": 3,
+    "category": "視聴覚室",
+    "note": "数量 2.0"
+  },
+  {
+    "id": "r3-13-07",
+    "name": "黒板消しクリーナー",
+    "reading": "黒板消しクリーナー",
+    "roomId": "r3-13",
+    "floor": 3,
+    "category": "視聴覚室",
+    "note": "数量 1.0"
+  },
+  {
+    "id": "r3-13-08",
+    "name": "マイク",
+    "reading": "マイク",
+    "roomId": "r3-13",
+    "floor": 3,
+    "category": "視聴覚室",
+    "note": "数量 1.0"
+  },
+  {
+    "id": "r3-13-09",
+    "name": "マイクスタンド",
+    "reading": "マイクスタンド",
+    "roomId": "r3-13",
+    "floor": 3,
+    "category": "視聴覚室",
+    "note": "数量 2.0"
+  },
+  {
+    "id": "r3-13-10",
+    "name": "ちりとり",
+    "reading": "ちりとり",
+    "roomId": "r3-13",
+    "floor": 3,
+    "category": "視聴覚室",
+    "note": "数量 1.0"
+  },
+  {
+    "id": "r3-16-01",
+    "name": "コロコロ付き椅子",
+    "reading": "コロコロ付き椅子",
+    "roomId": "r3-16",
+    "floor": 3,
+    "category": "コンピュータ室",
+    "note": "数量 39.0"
+  },
+  {
+    "id": "r3-16-02",
+    "name": "2人用大机",
+    "reading": "2人用大机",
+    "roomId": "r3-16",
+    "floor": 3,
+    "category": "コンピュータ室",
+    "note": "数量 22.0"
+  },
+  {
+    "id": "r3-16-03",
+    "name": "教室机",
+    "reading": "教室机",
+    "roomId": "r3-16",
+    "floor": 3,
+    "category": "コンピュータ室",
+    "note": "数量 26.0"
+  },
+  {
+    "id": "r3-16-04",
+    "name": "教室椅子",
+    "reading": "教室椅子",
+    "roomId": "r3-16",
+    "floor": 3,
+    "category": "コンピュータ室",
+    "note": "数量 17.0"
+  },
+  {
+    "id": "r3-16-05",
+    "name": "折りたたみ長机",
+    "reading": "折りたたみ長机",
+    "roomId": "r3-16",
+    "floor": 3,
+    "category": "コンピュータ室",
+    "note": "数量 2.0"
+  },
+  {
+    "id": "r3-16-06",
+    "name": "パイプ椅子",
+    "reading": "パイプ椅子",
+    "roomId": "r3-16",
+    "floor": 3,
+    "category": "コンピュータ室",
+    "note": "数量 10.0"
+  },
+  {
+    "id": "r3-16-07",
+    "name": "1.8m高さの大棚",
+    "reading": "1.8m高さの大棚",
+    "roomId": "r3-16",
+    "floor": 3,
+    "category": "コンピュータ室",
+    "note": "数量 2.0"
+  },
+  {
+    "id": "r3-16-08",
+    "name": "1m高さの棚",
+    "reading": "1m高さの棚",
+    "roomId": "r3-16",
+    "floor": 3,
+    "category": "コンピュータ室",
+    "note": "数量 1.0"
+  },
+  {
+    "id": "r3-16-09",
+    "name": "2人用大机茶色",
+    "reading": "2人用大机茶色",
+    "roomId": "r3-16",
+    "floor": 3,
+    "category": "コンピュータ室",
+    "note": "数量 2.0"
+  },
+  {
+    "id": "r3-17-01",
+    "name": "黒板消し",
+    "reading": "黒板消し",
+    "roomId": "r3-17",
+    "floor": 3,
+    "category": "美術室",
+    "note": "数量 1.0"
+  },
+  {
+    "id": "r3-17-02",
+    "name": "書類棚",
+    "reading": "書類棚",
+    "roomId": "r3-17",
+    "floor": 3,
+    "category": "美術室",
+    "note": "数量 2.0"
+  },
+  {
+    "id": "r3-17-03",
+    "name": "ほうき",
+    "reading": "ほうき",
+    "roomId": "r3-17",
+    "floor": 3,
+    "category": "美術室",
+    "note": "数量 7.0"
+  },
+  {
+    "id": "r3-17-04",
+    "name": "ちりとり",
+    "reading": "ちりとり",
+    "roomId": "r3-17",
+    "floor": 3,
+    "category": "美術室",
+    "note": "数量 1.0"
+  },
+  {
+    "id": "r3-17-05",
+    "name": "ゴミ箱",
+    "reading": "ゴミ箱",
+    "roomId": "r3-17",
+    "floor": 3,
+    "category": "美術室",
+    "note": "数量 1.0"
+  },
+  {
+    "id": "r3-17-06",
+    "name": "バケツ",
+    "reading": "バケツ",
+    "roomId": "r3-17",
+    "floor": 3,
+    "category": "美術室",
+    "note": "数量 3.0"
+  },
+  {
+    "id": "r3-17-07",
+    "name": "黒板消しクリーナー",
+    "reading": "黒板消しクリーナー",
+    "roomId": "r3-17",
+    "floor": 3,
+    "category": "美術室",
+    "note": "数量 1.0"
+  },
+  {
+    "id": "r3-17-08",
+    "name": "鉛筆削り",
+    "reading": "鉛筆削り",
+    "roomId": "r3-17",
+    "floor": 3,
+    "category": "美術室",
+    "note": "数量 2.0"
+  },
+  {
+    "id": "r3-17-09",
+    "name": "教室机",
+    "reading": "教室机",
+    "roomId": "r3-17",
+    "floor": 3,
+    "category": "美術室",
+    "note": "数量 29.0"
+  },
+  {
+    "id": "r3-17-10",
+    "name": "教室椅子",
+    "reading": "教室椅子",
+    "roomId": "r3-17",
+    "floor": 3,
+    "category": "美術室",
+    "note": "数量 36.0"
+  },
+  {
+    "id": "r3-17-11",
+    "name": "絵を立てるヤツ",
+    "reading": "絵を立てるヤツ",
+    "roomId": "r3-17",
+    "floor": 3,
+    "category": "美術室",
+    "note": "数量 6.0"
+  },
+  {
+    "id": "r3-17-12",
+    "name": "ゴミ箱",
+    "reading": "ゴミ箱",
+    "roomId": "r3-17",
+    "floor": 3,
+    "category": "美術室",
+    "note": "数量 1.0"
+  },
+  {
+    "id": "r4-07-01",
+    "name": "弦なしギター",
+    "reading": "弦なしギター",
+    "roomId": "r4-07",
+    "floor": 4,
+    "category": "音楽準備室1",
+    "note": "数量 1.0"
+  },
+  {
+    "id": "r4-07-02",
+    "name": "小さい2つの太鼓",
+    "reading": "小さい2つの太鼓",
+    "roomId": "r4-07",
+    "floor": 4,
+    "category": "音楽準備室1",
+    "note": "数量 1.0"
+  },
+  {
+    "id": "r4-07-03",
+    "name": "ギター",
+    "reading": "ギター",
+    "roomId": "r4-07",
+    "floor": 4,
+    "category": "音楽準備室1",
+    "note": "数量 1.0"
+  },
+  {
+    "id": "r4-07-04",
+    "name": "木槌",
+    "reading": "木槌",
+    "roomId": "r4-07",
+    "floor": 4,
+    "category": "音楽準備室1",
+    "note": "数量 2.0"
+  },
+  {
+    "id": "r4-07-05",
+    "name": "譜面台",
+    "reading": "譜面台",
+    "roomId": "r4-07",
+    "floor": 4,
+    "category": "音楽準備室1",
+    "note": "数量 20.0"
+  },
+  {
+    "id": "r4-07-06",
+    "name": "大太鼓(横)",
+    "reading": "大太鼓(横)",
+    "roomId": "r4-07",
+    "floor": 4,
+    "category": "音楽準備室1",
+    "note": "数量 2.0"
+  },
+  {
+    "id": "r4-07-07",
+    "name": "ドラムセットの下のやつ",
+    "reading": "ドラムセットの下のやつ",
+    "roomId": "r4-07",
+    "floor": 4,
+    "category": "音楽準備室1",
+    "note": "数量 1.0"
+  },
+  {
+    "id": "r4-07-08",
+    "name": "大太鼓(縦)",
+    "reading": "大太鼓(縦)",
+    "roomId": "r4-07",
+    "floor": 4,
+    "category": "音楽準備室1",
+    "note": "数量 2.0"
+  },
+  {
+    "id": "r4-07-09",
+    "name": "中国の大きめの叩いて鳴らすやつ",
+    "reading": "中国の大きめの叩いて鳴らすやつ",
+    "roomId": "r4-07",
+    "floor": 4,
+    "category": "音楽準備室1",
+    "note": "数量 1.0"
+  },
+  {
+    "id": "r4-07-10",
+    "name": "棚上太鼓",
+    "reading": "棚上太鼓",
+    "roomId": "r4-07",
+    "floor": 4,
+    "category": "音楽準備室1",
+    "note": "数量 9.0"
+  },
+  {
+    "id": "r4-07-11",
+    "name": "ビートを刻むやつ",
+    "reading": "ビートを刻むやつ",
+    "roomId": "r4-07",
+    "floor": 4,
+    "category": "音楽準備室1",
+    "note": "数量 8.0"
+  },
+  {
+    "id": "r4-07-12",
+    "name": "木琴",
+    "reading": "木琴",
+    "roomId": "r4-07",
+    "floor": 4,
+    "category": "音楽準備室1",
+    "note": "数量 2.0"
+  },
+  {
+    "id": "r4-07-13",
+    "name": "トランペット的",
+    "reading": "トランペット的",
+    "roomId": "r4-07",
+    "floor": 4,
+    "category": "音楽準備室1",
+    "note": "数量 40.0"
+  },
+  {
+    "id": "r4-07-14",
+    "name": "楽譜",
+    "reading": "楽譜",
+    "roomId": "r4-07",
+    "floor": 4,
+    "category": "音楽準備室1",
+    "note": "数量 たくさん"
+  },
+  {
+    "id": "r4-07-15",
+    "name": "電気ストーブ",
+    "reading": "電気ストーブ",
+    "roomId": "r4-07",
+    "floor": 4,
+    "category": "音楽準備室2",
+    "note": "数量 1.0"
+  },
+  {
+    "id": "r4-07-16",
+    "name": "黒いテレビ台",
+    "reading": "黒いテレビ台",
+    "roomId": "r4-07",
+    "floor": 4,
+    "category": "音楽準備室2",
+    "note": "数量 1.0"
+  },
+  {
+    "id": "r4-07-17",
+    "name": "書類入れれそう棚",
+    "reading": "書類入れれそう棚",
+    "roomId": "r4-07",
+    "floor": 4,
+    "category": "音楽準備室2",
+    "note": "数量 1.0"
+  },
+  {
+    "id": "r4-07-18",
+    "name": "職員室棚",
+    "reading": "職員室棚",
+    "roomId": "r4-07",
+    "floor": 4,
+    "category": "音楽準備室2",
+    "note": "数量 2.0"
+  },
+  {
+    "id": "r4-07-19",
+    "name": "教室机",
+    "reading": "教室机",
+    "roomId": "r4-07",
+    "floor": 4,
+    "category": "音楽準備室2",
+    "note": "数量 13.0"
+  },
+  {
+    "id": "r4-07-20",
+    "name": "教室椅子",
+    "reading": "教室椅子",
+    "roomId": "r4-07",
+    "floor": 4,
+    "category": "音楽準備室2",
+    "note": "数量 9.0"
+  },
+  {
+    "id": "r4-07-21",
+    "name": "低くてちょい長めな1人椅子",
+    "reading": "低くてちょい長めな1人椅子",
+    "roomId": "r4-07",
+    "floor": 4,
+    "category": "音楽準備室2",
+    "note": "数量 1.0"
+  },
+  {
+    "id": "r4-07-22",
+    "name": "テレビ",
+    "reading": "テレビ",
+    "roomId": "r4-07",
+    "floor": 4,
+    "category": "音楽準備室2",
+    "note": "数量 1.0"
+  },
+  {
+    "id": "r4-07-23",
+    "name": "白いテレビ台",
+    "reading": "白いテレビ台",
+    "roomId": "r4-07",
+    "floor": 4,
+    "category": "音楽準備室2",
+    "note": "数量 1.0"
+  },
+  {
+    "id": "r4-07-24",
+    "name": "3段棚",
+    "reading": "3段棚",
+    "roomId": "r4-07",
+    "floor": 4,
+    "category": "音楽準備室2",
+    "note": "数量 9.0"
+  },
+  {
+    "id": "r4-07-25",
+    "name": "譜面台",
+    "reading": "譜面台",
+    "roomId": "r4-07",
+    "floor": 4,
+    "category": "音楽準備室2",
+    "note": "数量 1.0"
+  },
+  {
+    "id": "r4-07-26",
+    "name": "時計",
+    "reading": "時計",
+    "roomId": "r4-07",
+    "floor": 4,
+    "category": "音楽準備室2",
+    "note": "数量 1.0"
+  },
+  {
+    "id": "r4-07-27",
+    "name": "DVDプレーヤー",
+    "reading": "DVDプレーヤー",
+    "roomId": "r4-07",
+    "floor": 4,
+    "category": "音楽準備室2",
+    "note": "数量 1.0"
+  },
+  {
+    "id": "r4-07-28",
+    "name": "黒い中物箱",
+    "reading": "黒い中物箱",
+    "roomId": "r4-07",
+    "floor": 4,
+    "category": "音楽準備室2",
+    "note": "数量 1.0"
+  },
+  {
+    "id": "r4-08-01",
+    "name": "教室机",
+    "reading": "教室机",
+    "roomId": "r4-08",
+    "floor": 4,
+    "category": "音楽室1",
+    "note": "数量 32.0"
+  },
+  {
+    "id": "r4-08-02",
+    "name": "教室椅子",
+    "reading": "教室椅子",
+    "roomId": "r4-08",
+    "floor": 4,
+    "category": "音楽室1",
+    "note": "数量 33.0"
+  },
+  {
+    "id": "r4-08-03",
+    "name": "デカ姿見",
+    "reading": "デカ姿見",
+    "roomId": "r4-08",
+    "floor": 4,
+    "category": "音楽室1",
+    "note": "数量 1.0"
+  },
+  {
+    "id": "r4-08-04",
+    "name": "姿見",
+    "reading": "姿見",
+    "roomId": "r4-08",
+    "floor": 4,
+    "category": "音楽室1",
+    "note": "数量 1.0"
+  },
+  {
+    "id": "r4-08-05",
+    "name": "丸マグネット",
+    "reading": "丸マグネット",
+    "roomId": "r4-08",
+    "floor": 4,
+    "category": "音楽室1",
+    "note": "数量 10.0"
+  },
+  {
+    "id": "r4-08-06",
+    "name": "長マグネット",
+    "reading": "長マグネット",
+    "roomId": "r4-08",
+    "floor": 4,
+    "category": "音楽室1",
+    "note": "数量 1.0"
+  },
+  {
+    "id": "r4-08-07",
+    "name": "ホワイトボードクリーナー",
+    "reading": "ホワイトボードクリーナー",
+    "roomId": "r4-08",
+    "floor": 4,
+    "category": "音楽室1",
+    "note": "数量 2.0"
+  },
+  {
+    "id": "r4-08-08",
+    "name": "クレベリン",
+    "reading": "クレベリン",
+    "roomId": "r4-08",
+    "floor": 4,
+    "category": "音楽室1",
+    "note": "数量 4.0"
+  },
+  {
+    "id": "r4-08-09",
+    "name": "アルコール除菌スプレー(手)",
+    "reading": "アルコール除菌スプレー(手)",
+    "roomId": "r4-08",
+    "floor": 4,
+    "category": "音楽室1",
+    "note": "数量 3.0"
+  },
+  {
+    "id": "r4-08-10",
+    "name": "電子ピアノ",
+    "reading": "電子ピアノ",
+    "roomId": "r4-08",
+    "floor": 4,
+    "category": "音楽室1",
+    "note": "数量 2.0"
+  },
+  {
+    "id": "r4-08-11",
+    "name": "電気ストーブ",
+    "reading": "電気ストーブ",
+    "roomId": "r4-08",
+    "floor": 4,
+    "category": "音楽室1",
+    "note": "数量 1.0"
+  },
+  {
+    "id": "r4-08-12",
+    "name": "ほうき",
+    "reading": "ほうき",
+    "roomId": "r4-08",
+    "floor": 4,
+    "category": "音楽室1",
+    "note": "数量 6.0"
+  },
+  {
+    "id": "r4-08-13",
+    "name": "ちりとり",
+    "reading": "ちりとり",
+    "roomId": "r4-08",
+    "floor": 4,
+    "category": "音楽室1",
+    "note": "数量 1.0"
+  },
+  {
+    "id": "r4-08-14",
+    "name": "ミニほうき",
+    "reading": "ミニほうき",
+    "roomId": "r4-08",
+    "floor": 4,
+    "category": "音楽室1",
+    "note": "数量 2.0"
+  },
+  {
+    "id": "r4-08-15",
+    "name": "ぞうきん",
+    "reading": "ぞうきん",
+    "roomId": "r4-08",
+    "floor": 4,
+    "category": "音楽室1",
+    "note": "数量 5.0"
+  },
+  {
+    "id": "r4-08-16",
+    "name": "立てるホワイトボード",
+    "reading": "立てるホワイトボード",
+    "roomId": "r4-08",
+    "floor": 4,
+    "category": "音楽室1",
+    "note": "数量 1.0"
+  },
+  {
+    "id": "r4-08-17",
+    "name": "ミニホワイトボード",
+    "reading": "ミニホワイトボード",
+    "roomId": "r4-08",
+    "floor": 4,
+    "category": "音楽室1",
+    "note": "数量 1.0"
+  },
+  {
+    "id": "r4-08-18",
+    "name": "7段書類入れ",
+    "reading": "7段書類入れ",
+    "roomId": "r4-08",
+    "floor": 4,
+    "category": "音楽室1",
+    "note": "数量 1.0"
+  },
+  {
+    "id": "r4-08-19",
+    "name": "ハチアブの駆除スプレー",
+    "reading": "ハチアブの駆除スプレー",
+    "roomId": "r4-08",
+    "floor": 4,
+    "category": "音楽室1",
+    "note": "数量 1.0"
+  },
+  {
+    "id": "r4-09-01",
+    "name": "教室机",
+    "reading": "教室机",
     "roomId": "r4-09",
     "floor": 4,
-    "category": "養生",
-    "note": "3.6m × 5.4m 6枚"
+    "category": "音楽室2",
+    "note": "数量 5.0"
+  },
+  {
+    "id": "r4-09-02",
+    "name": "教室椅子",
+    "reading": "教室椅子",
+    "roomId": "r4-09",
+    "floor": 4,
+    "category": "音楽室2",
+    "note": "数量 34.0"
+  },
+  {
+    "id": "r4-09-03",
+    "name": "パイプ椅子",
+    "reading": "パイプ椅子",
+    "roomId": "r4-09",
+    "floor": 4,
+    "category": "音楽室2",
+    "note": "数量 2.0"
+  },
+  {
+    "id": "r4-09-04",
+    "name": "デカマリンバ",
+    "reading": "デカマリンバ",
+    "roomId": "r4-09",
+    "floor": 4,
+    "category": "音楽室2",
+    "note": "数量 4.0"
+  },
+  {
+    "id": "r4-09-05",
+    "name": "中太鼓",
+    "reading": "中太鼓",
+    "roomId": "r4-09",
+    "floor": 4,
+    "category": "音楽室2",
+    "note": "数量 2.0"
+  },
+  {
+    "id": "r4-09-06",
+    "name": "シンバル",
+    "reading": "シンバル",
+    "roomId": "r4-09",
+    "floor": 4,
+    "category": "音楽室2",
+    "note": "数量 2.0"
+  },
+  {
+    "id": "r4-09-07",
+    "name": "譜面台",
+    "reading": "譜面台",
+    "roomId": "r4-09",
+    "floor": 4,
+    "category": "音楽室2",
+    "note": "数量 1.0"
+  },
+  {
+    "id": "r4-09-08",
+    "name": "毛布",
+    "reading": "毛布",
+    "roomId": "r4-09",
+    "floor": 4,
+    "category": "音楽室2",
+    "note": "数量 3.0"
+  },
+  {
+    "id": "r4-09-09",
+    "name": "ほうき",
+    "reading": "ほうき",
+    "roomId": "r4-09",
+    "floor": 4,
+    "category": "音楽室2",
+    "note": "数量 3.0"
+  },
+  {
+    "id": "r4-09-10",
+    "name": "ちりとり",
+    "reading": "ちりとり",
+    "roomId": "r4-09",
+    "floor": 4,
+    "category": "音楽室2",
+    "note": "数量 2.0"
+  },
+  {
+    "id": "r4-09-11",
+    "name": "ミニほうき",
+    "reading": "ミニほうき",
+    "roomId": "r4-09",
+    "floor": 4,
+    "category": "音楽室2",
+    "note": "数量 1.0"
+  },
+  {
+    "id": "r4-09-12",
+    "name": "ぞうきん",
+    "reading": "ぞうきん",
+    "roomId": "r4-09",
+    "floor": 4,
+    "category": "音楽室2",
+    "note": "数量 4.0"
+  },
+  {
+    "id": "r4-09-13",
+    "name": "三角ゴミ箱",
+    "reading": "三角ゴミ箱",
+    "roomId": "r4-09",
+    "floor": 4,
+    "category": "音楽室2",
+    "note": "数量 2.0"
+  },
+  {
+    "id": "r4-09-14",
+    "name": "延長コード",
+    "reading": "延長コード",
+    "roomId": "r4-09",
+    "floor": 4,
+    "category": "音楽室2",
+    "note": "数量 1.0"
+  },
+  {
+    "id": "r4-09-15",
+    "name": "立てる黒板",
+    "reading": "立てる黒板",
+    "roomId": "r4-09",
+    "floor": 4,
+    "category": "音楽室2",
+    "note": "数量 1.0"
+  },
+  {
+    "id": "r4-09-16",
+    "name": "黒板消し",
+    "reading": "黒板消し",
+    "roomId": "r4-09",
+    "floor": 4,
+    "category": "音楽室2",
+    "note": "数量 2.0"
+  },
+  {
+    "id": "r4-09-17",
+    "name": "掲示板貼り付ける針",
+    "reading": "掲示板貼り付ける針",
+    "roomId": "r4-09",
+    "floor": 4,
+    "category": "音楽室2",
+    "note": "数量 40.0"
+  },
+  {
+    "id": "r4-09-18",
+    "name": "CDプレーヤー",
+    "reading": "CDプレーヤー",
+    "roomId": "r4-09",
+    "floor": 4,
+    "category": "音楽室2",
+    "note": "数量 2.0"
+  },
+  {
+    "id": "r4-09-19",
+    "name": "トランペットの口付けるやつ",
+    "reading": "トランペットの口付けるやつ",
+    "roomId": "r4-09",
+    "floor": 4,
+    "category": "音楽室2",
+    "note": "数量 3.0"
+  },
+  {
+    "id": "r4-09-20",
+    "name": "でかミキサー",
+    "reading": "でかミキサー",
+    "roomId": "r4-09",
+    "floor": 4,
+    "category": "音楽室2",
+    "note": "数量 1.0"
+  },
+  {
+    "id": "r4-09-21",
+    "name": "2段机",
+    "reading": "2段机",
+    "roomId": "r4-09",
+    "floor": 4,
+    "category": "音楽室2",
+    "note": "数量 1.0"
+  },
+  {
+    "id": "r4-09-22",
+    "name": "デカ譜面台",
+    "reading": "デカ譜面台",
+    "roomId": "r4-09",
+    "floor": 4,
+    "category": "音楽室2",
+    "note": "数量 1.0"
+  },
+  {
+    "id": "r4-09-23",
+    "name": "電子ピアノ",
+    "reading": "電子ピアノ",
+    "roomId": "r4-09",
+    "floor": 4,
+    "category": "音楽室2",
+    "note": "数量 2.0"
+  },
+  {
+    "id": "r4-09-24",
+    "name": "バケツ",
+    "reading": "バケツ",
+    "roomId": "r4-09",
+    "floor": 4,
+    "category": "音楽室2",
+    "note": "数量 3.0"
+  },
+  {
+    "id": "r5-01-01",
+    "name": "苗木",
+    "reading": "苗木",
+    "roomId": "r5-01",
+    "floor": 5,
+    "category": "屋上",
+    "note": "数量 8.0"
   }
 ]

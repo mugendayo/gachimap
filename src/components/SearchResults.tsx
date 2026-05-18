@@ -1,4 +1,5 @@
 import type { Item } from '../types'
+import { getFloorLabel } from './floors'
 
 interface Props {
   items: Item[]
@@ -44,7 +45,7 @@ export default function SearchResults({
                   {item.name}
                 </span>
                 <span className="shrink-0 rounded-md bg-orange-500 px-2 py-0.5 text-base font-bold text-white">
-                  {item.floor}F
+                  {getFloorLabel(item.floor)}
                 </span>
               </div>
               <div className="mt-1 text-sm text-slate-400">

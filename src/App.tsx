@@ -2,7 +2,7 @@ import { useEffect, useMemo, useState } from 'react'
 import type { Item } from './types'
 import { matchItem } from './utils/search'
 import { useIdleReset } from './hooks/useIdleReset'
-import { FLOOR_COMPONENTS } from './components/floors'
+import { FLOOR_COMPONENTS, getFloorLabel } from './components/floors'
 import { getRoomLabel } from './components/floors/floorData'
 import MapViewport from './components/MapViewport'
 import SearchBar from './components/SearchBar'
@@ -133,7 +133,7 @@ export default function App() {
           {selectedItem && (
             <div className="pointer-events-none absolute left-5 top-5 max-w-sm rounded-2xl border border-orange-400/60 bg-slate-900/90 p-5 shadow-xl">
               <div className="text-sm font-bold text-orange-400">
-                {selectedItem.floor}F ・ {selectedItem.category}
+                {getFloorLabel(selectedItem.floor)} ・ {selectedItem.category}
               </div>
               <div className="mt-1 text-3xl font-extrabold text-slate-50">
                 {selectedItem.name}
