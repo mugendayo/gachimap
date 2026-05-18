@@ -6,12 +6,13 @@ import {
   useState,
   type ReactNode,
 } from 'react'
+import { CANVAS_W, CANVAS_H } from './floors/FloorCanvas'
 
 // フロアSVGの内部座標（viewBox）と一致させた論理サイズ。
-// FloorCanvas が width=1000 height=700 / viewBox 0 0 1000 700 で描くので
+// FloorCanvas が width=CANVAS_W height=CANVAS_H / 同 viewBox で描くので
 // この層の 1px = SVGユーザー単位 となり getBBox() の値をそのまま使える。
-const CONTENT_W = 1000
-const CONTENT_H = 700
+const CONTENT_W = CANVAS_W
+const CONTENT_H = CANVAS_H
 const MIN_SCALE = 0.2
 const MAX_SCALE = 6
 const EASE = 'transform 650ms cubic-bezier(0.22, 1, 0.36, 1)'

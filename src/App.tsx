@@ -3,6 +3,7 @@ import type { Item } from './types'
 import { matchItem } from './utils/search'
 import { useIdleReset } from './hooks/useIdleReset'
 import { FLOOR_COMPONENTS } from './components/floors'
+import { getRoomLabel } from './components/floors/floorData'
 import MapViewport from './components/MapViewport'
 import SearchBar from './components/SearchBar'
 import FloorTabs from './components/FloorTabs'
@@ -138,7 +139,7 @@ export default function App() {
                 {selectedItem.name}
               </div>
               <div className="mt-2 text-lg text-slate-300">
-                光っている部屋（{selectedItem.roomId.replace('room-', '')}）に
+                光っている部屋「{getRoomLabel(selectedItem.roomId)}」に
                 あります
               </div>
               <div className="mt-1 text-base text-slate-400">

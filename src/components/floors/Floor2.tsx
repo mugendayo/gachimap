@@ -1,11 +1,14 @@
 import FloorCanvas from './FloorCanvas'
-import { buildRooms, type FloorProps } from './types'
+import { FLOOR_ROOMS } from './floorData'
+import type { FloorProps } from './types'
 
-// 2F フロアマップ（仮のプレースホルダ）。本物の図面ができたらここを差し替える。
-const rooms = buildRooms(2)
-
+// 2F フロアマップ。本物の図面ができたらここを差し替える。
 export default function Floor2({ highlightRoomId }: FloorProps) {
   return (
-    <FloorCanvas floor={2} rooms={rooms} highlightRoomId={highlightRoomId} />
+    <FloorCanvas
+      floor={2}
+      layout={FLOOR_ROOMS[2]}
+      highlightRoomId={highlightRoomId}
+    />
   )
 }

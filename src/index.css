@@ -27,6 +27,12 @@ body {
   transition: fill 0.3s ease, stroke 0.3s ease;
 }
 
+.room-rect.is-red {
+  fill: #2a1414;
+  stroke: #ef4444;
+  stroke-width: 3;
+}
+
 .room-rect.is-highlight {
   fill: #f97316;
   stroke: #fde68a;
@@ -36,8 +42,8 @@ body {
 
 .room-label {
   fill: #cbd5e1;
-  font-size: 22px;
-  font-weight: 700;
+  font-size: 16px;
+  font-weight: 600;
   pointer-events: none;
 }
 
