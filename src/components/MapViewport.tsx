@@ -42,6 +42,8 @@ interface Props {
   moveMode?: boolean
   /** 移動モード中に部屋がタップされたら呼ばれる */
   onPickRoom?: (roomId: string) => void
+  /** 通常時に地図をタップしたら呼ばれる（部屋IDか、余白なら null） */
+  onBackgroundTap?: (roomId: string | null) => void
   children: ReactNode
 }
 
@@ -61,6 +63,7 @@ export default function MapViewport({
   fitSignal,
   moveMode = false,
   onPickRoom,
+  onBackgroundTap,
   children,
 }: Props) {
   const containerRef = useRef<HTMLDivElement>(null)
@@ -221,16 +224,18 @@ export default function MapViewport({
     } catch {
       /* noop */
     }
-    // 移動モード：ほぼ動いていない＝タップなら、その部屋を選ぶ
-    if (moveMode && onPickRoom) {
-      const dx = e.clientX - drag.current.sx
-      const dy = e.clientY - drag.current.sy
-      if (Math.hypot(dx, dy) < 8) {
-        const el = document.elementFromPoint(e.clientX, e.clientY)
-        const hit = el?.closest('[id]') as Element | null
-        const id = hit?.id ?? ''
-        if (ROOM_ID_RE.test(id)) onPickRoom(id)
-      }
+    // ほぼ動いていない＝タップ
+    const dx = e.clientX - drag.current.sx
+    const dy = e.clientY - drag.current.sy
+    if (Math.hypot(dx, dy) >= 8) return
+    const el = document.elementFromPoint(e.clientX, e.clientY)
+    const hit = el?.closest('[id]') as Element | null
+    const id = hit?.id ?? ''
+    const roomId = ROOM_ID_RE.test(id) ? id : null
+    if (moveMode) {
+      if (roomId && onPickRoom) onPickRoom(roomId)
+    } else if (onBackgroundTap) {
+      onBackgroundTap(roomId)
     }
   }
 
@@ -275,18 +280,18 @@ export default function MapViewport({
         {children}
       </div>
 
-      {/* ズーム操作ボタン（マウス操作のキオスク向け補助） */}
-      <div className="absolute bottom-5 right-5 flex flex-col gap-2">
+      {/* ズーム操作ボタン（横並びにして小型デバイスでも全ボタン見えるように） */}
+      <div className="absolute bottom-3 right-3 z-10 flex flex-row gap-2 sm:bottom-5 sm:right-5">
         <button
           onClick={() => zoomBy(1.3)}
-          className="h-12 w-12 rounded-xl bg-slate-800/90 text-2xl font-bold text-slate-100 shadow-lg ring-1 ring-slate-600 hover:bg-slate-700"
+          className="h-10 w-10 rounded-xl bg-slate-800/90 text-xl font-bold text-slate-100 shadow-lg ring-1 ring-slate-600 hover:bg-slate-700 sm:h-12 sm:w-12 sm:text-2xl"
           aria-label="拡大"
         >
           ＋
         </button>
         <button
           onClick={() => zoomBy(1 / 1.3)}
-          className="h-12 w-12 rounded-xl bg-slate-800/90 text-2xl font-bold text-slate-100 shadow-lg ring-1 ring-slate-600 hover:bg-slate-700"
+          className="h-10 w-10 rounded-xl bg-slate-800/90 text-xl font-bold text-slate-100 shadow-lg ring-1 ring-slate-600 hover:bg-slate-700 sm:h-12 sm:w-12 sm:text-2xl"
           aria-label="縮小"
         >
           －
@@ -296,7 +301,7 @@ export default function MapViewport({
             intentRef.current = { type: 'fit' }
             applyFit(true)
           }}
-          className="h-12 w-12 rounded-xl bg-slate-800/90 text-xs font-bold text-slate-100 shadow-lg ring-1 ring-slate-600 hover:bg-slate-700"
+          className="h-10 w-10 rounded-xl bg-slate-800/90 text-[11px] font-bold text-slate-100 shadow-lg ring-1 ring-slate-600 hover:bg-slate-700 sm:h-12 sm:w-12 sm:text-xs"
           aria-label="全体表示"
         >
           全体

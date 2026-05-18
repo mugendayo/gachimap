@@ -116,6 +116,14 @@ export default function App() {
     setMovingItemId('')
   }
 
+  // 通常時：点滅中の部屋以外をタップしたらカードを閉じて全体表示に戻る
+  const handleBackgroundTap = (roomId: string | null) => {
+    if (!selectedItemId) return
+    if (selectedItem && roomId === selectedItem.roomId) return
+    setSelectedItemId('')
+    setFitSignal((s) => s + 1)
+  }
+
   const resetAll = useCallback(() => {
     setQuery('')
     setSelectedItemId('')
@@ -225,20 +233,20 @@ export default function App() {
 
   return (
     <div className="flex h-screen w-screen flex-col overflow-hidden bg-[#0b1020] text-slate-100">
-      <header className="flex flex-col gap-4 border-b border-slate-800 px-6 py-4">
-        <div className="flex items-center justify-between gap-4">
-          <div>
-            <h1 className="text-3xl font-extrabold tracking-wide">
+      <header className="flex flex-col gap-3 border-b border-slate-800 px-3 py-3 sm:gap-4 sm:px-6 sm:py-4">
+        <div className="flex items-center justify-between gap-3">
+          <div className="min-w-0">
+            <h1 className="truncate text-xl font-extrabold tracking-wide sm:text-3xl">
               下市集学校 文化祭{' '}
               <span className="text-orange-400">備品案内板</span>
             </h1>
-            <p className="text-sm text-slate-400">
+            <p className="hidden text-sm text-slate-400 sm:block">
               さがしたい備品を入力するか、左の一覧から選んでください
             </p>
           </div>
           <button
             onClick={resetAll}
-            className="rounded-xl bg-slate-800 px-5 py-3 text-lg font-bold text-slate-200 hover:bg-slate-700"
+            className="shrink-0 rounded-xl bg-slate-800 px-3 py-2 text-base font-bold text-slate-200 hover:bg-slate-700 sm:px-5 sm:py-3 sm:text-lg"
           >
             最初に戻る
           </button>
@@ -250,7 +258,7 @@ export default function App() {
       </header>
 
       <main className="flex min-h-0 flex-1">
-        <aside className="flex w-[380px] shrink-0 flex-col border-r border-slate-800">
+        <aside className="flex w-[260px] shrink-0 flex-col border-r border-slate-800 sm:w-[380px]">
           <div className="border-b border-slate-800 px-4 py-3 text-sm font-bold text-slate-400">
             {query ? `「${query}」の検索結果` : 'すべての備品'}（
             {results.length}件）
@@ -278,6 +286,7 @@ export default function App() {
             fitSignal={fitSignal}
             moveMode={moveMode}
             onPickRoom={pickRoom}
+            onBackgroundTap={handleBackgroundTap}
           >
             <FloorComponent highlightRoomId={focusRoomId} />
           </MapViewport>
