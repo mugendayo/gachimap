@@ -38,8 +38,15 @@ interface Props {
   focusRoomId?: string
   /** インクリメントすると全体表示にリセットする */
   fitSignal: number
+  /** 移動モード：地図の部屋タップで onPickRoom を呼ぶ */
+  moveMode?: boolean
+  /** 移動モード中に部屋がタップされたら呼ばれる */
+  onPickRoom?: (roomId: string) => void
   children: ReactNode
 }
+
+/** 部屋IDの形（r1-03 / r5-09 など） */
+const ROOM_ID_RE = /^r\d-\d{2}$/
 
 /**
  * フロアマップのビューポート。
@@ -52,6 +59,8 @@ export default function MapViewport({
   floor,
   focusRoomId,
   fitSignal,
+  moveMode = false,
+  onPickRoom,
   children,
 }: Props) {
   const containerRef = useRef<HTMLDivElement>(null)
@@ -212,6 +221,17 @@ export default function MapViewport({
     } catch {
       /* noop */
     }
+    // 移動モード：ほぼ動いていない＝タップなら、その部屋を選ぶ
+    if (moveMode && onPickRoom) {
+      const dx = e.clientX - drag.current.sx
+      const dy = e.clientY - drag.current.sy
+      if (Math.hypot(dx, dy) < 8) {
+        const el = document.elementFromPoint(e.clientX, e.clientY)
+        const hit = el?.closest('[id]') as Element | null
+        const id = hit?.id ?? ''
+        if (ROOM_ID_RE.test(id)) onPickRoom(id)
+      }
+    }
   }
 
   // ＋ / − ボタン（画面中心を固定点にズーム）
@@ -234,7 +254,7 @@ export default function MapViewport({
     <div
       ref={containerRef}
       className="relative h-full w-full overflow-hidden bg-[#0b1020]"
-      style={{ touchAction: 'none', cursor: 'grab' }}
+      style={{ touchAction: 'none', cursor: moveMode ? 'crosshair' : 'grab' }}
       onPointerDown={onPointerDown}
       onPointerMove={onPointerMove}
       onPointerUp={endDrag}

@@ -1,11 +1,14 @@
 import type { Item } from '../types'
 import { getFloorLabel } from './floors'
+import { getRoomLabel } from './floors/floorData'
 
 interface Props {
   items: Item[]
   query: string
   selectedId: string
   onSelect: (item: Item) => void
+  /** 移動済み（元の保管場所と違う）備品IDの集合 */
+  movedIds?: Set<string>
 }
 
 /** 検索結果（備品リスト）。クリックで該当フロア＋部屋へ案内する。 */
@@ -14,6 +17,7 @@ export default function SearchResults({
   query,
   selectedId,
   onSelect,
+  movedIds,
 }: Props) {
   if (items.length === 0) {
     return (
@@ -29,6 +33,7 @@ export default function SearchResults({
     <ul className="flex flex-col gap-2">
       {items.map((item) => {
         const on = item.id === selectedId
+        const moved = movedIds?.has(item.id) ?? false
         return (
           <li key={item.id}>
             <button
@@ -48,8 +53,18 @@ export default function SearchResults({
                   {getFloorLabel(item.floor)}
                 </span>
               </div>
-              <div className="mt-1 text-sm text-slate-400">
-                {item.category} ・ {item.note}
+              <div className="mt-1 flex items-center gap-2 text-sm text-slate-400">
+                {moved && (
+                  <span className="rounded bg-amber-500/90 px-1.5 py-0.5 text-xs font-bold text-black">
+                    移動済み
+                  </span>
+                )}
+                <span>
+                  {moved
+                    ? `現在地: ${getRoomLabel(item.roomId)}`
+                    : item.category}
+                  {item.note ? ` ・ ${item.note}` : ''}
+                </span>
               </div>
             </button>
           </li>

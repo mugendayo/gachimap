@@ -138,3 +138,14 @@ const LABEL_BY_ID: Record<string, string> = (() => {
 export function getRoomLabel(id: string): string {
   return LABEL_BY_ID[id] ?? id
 }
+
+/** roomId（r<階>-NN）から階番号を取り出す */
+export function floorOfRoom(id: string): number {
+  const n = Number(id?.[1])
+  return Number.isFinite(n) ? n : 1
+}
+
+/** その roomId が現在のマップに存在するか */
+export function isKnownRoom(id: string): boolean {
+  return id in LABEL_BY_ID
+}
