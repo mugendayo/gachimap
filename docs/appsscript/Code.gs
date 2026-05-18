@@ -10,11 +10,23 @@
  * セットアップは docs/appsscript/SETUP.md を参照。
  */
 
+// 対象スプレッドシートのID（URLの /d/ と /edit の間）。
+// これで開くので、オーナーでなく「編集者」権限でも、
+// またコンテナ非依存の独立スクリプトでも動く。
+var SPREADSHEET_ID = '1-Vbh4A2LPBDxn2m8xrQTrSEJzKqv36sDZ4_-pjtJ0mw'
 var SHEET_NAME = '移動記録'
 var HEADERS = ['id', 'name', 'from', 'fromLabel', 'to', 'toLabel', 'updatedAt']
 
+function ss_() {
+  try {
+    return SpreadsheetApp.openById(SPREADSHEET_ID)
+  } catch (e) {
+    return SpreadsheetApp.getActiveSpreadsheet()
+  }
+}
+
 function getSheet_() {
-  var ss = SpreadsheetApp.getActiveSpreadsheet()
+  var ss = ss_()
   var sh = ss.getSheetByName(SHEET_NAME)
   if (!sh) {
     sh = ss.insertSheet(SHEET_NAME)
